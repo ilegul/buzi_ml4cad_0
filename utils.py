@@ -66,3 +66,124 @@ class DebuggablePipeLine(Pipeline):
         casted_obj.__dict__ = to_be_casted_obj.__dict__
         return casted_obj
 
+
+# ==================== Feature naming & cluster mapping ====================
+
+def safe_feature_index(feature_name, feat_names):
+    """
+    Universal feature mapping that works for all model configurations (18, 23, 27, 32).
+    Automatically detects which features are available and maps accordingly.
+    """
+    
+    # Universal mapping dictionary - covers all possible mappings
+    name_fixes = {
+        # Demographics
+        'Gender': 'Gender (Male = 1)',
+        
+        # Risk factors (cluster names -> CSV names with newlines)
+        'Diabetes': 'Diabetes\nHistory of diabetes',
+        'Smoke': 'Smoke\nHistory of smoke', 
+        'Hypertension': 'Hypertension\nHistory of hypertension',
+        'Dyslipidemia': 'Dyslipidemia\nHystory of dyslipidemia',
+        
+        # Cardiovascular abbreviations -> full names
+        'PCI': 'Previous PCI',
+        'Previous MI': 'Previous Myocardial Infarction', 
+        'Post IDC': 'Post-ischemic Dilated\nCardiomyopathy',
+        'LVEF': 'fe',
+        'Acute MI': 'Acute Myocardial Infarction',
+        
+        # Ischemia (special case with newline)
+        'Documented resting \nor exertional ischemia': 'Documented resting \nor exertional ischemia',
+        
+        # Thyroid (Italian -> original, only present in 27/32 feature models)
+        'Hypothyroidism': 'Ipotiroidismo',
+        'Hyperthyroidism': 'Ipertiroidismo',
+        'SCH': 'Subclinical primary hypothyroidism (SCH)',
+        'SCT': 'Subclinical primary hyperthyroidism\n(SCT)',
+        
+        # Features that are the same in cluster and CSV
+        'Age': 'Age',
+        'Angina': 'Angina', 
+        'Angiography': 'Angiography',
+        'Vessels': 'Vessels',
+        'Previous CABG': 'Previous CABG',
+        'Atrial Fibrillation': 'Atrial Fibrillation',
+        'TSH': 'TSH',
+        'fT3': 'fT3',
+        'fT4': 'fT4', 
+        'Euthyroid': 'Euthyroid',
+        'Low T3': 'Low T3',
+        'Total cholesterol': 'Total cholesterol',
+        'HDL': 'HDL',
+        'LDL': 'LDL',
+        'Triglycerides': 'Triglycerides',
+        'Creatinina': 'Creatinina',
+        'Survive7Y': 'Survive7Y'
+    }
+    
+    # Step 1: Try mapped name if mapping exists
+    if feature_name in name_fixes:
+        mapped_name = name_fixes[feature_name]
+        if mapped_name in feat_names:
+            return feat_names.index(mapped_name)
+    
+    # Step 2: Try exact match
+    if feature_name in feat_names:
+        return feat_names.index(feature_name)
+    
+    # Step 3: Try fuzzy matching for edge cases
+    feature_lower = feature_name.lower().strip()
+    for i, feat in enumerate(feat_names):
+        feat_clean = feat.lower().strip().replace('\n', ' ')
+        if feature_lower == feat_clean or feature_lower in feat_clean:
+            return i
+    
+    # Step 4: If still not found, show helpful debug info
+    print(f"❌ Feature '{feature_name}' not found!")
+    if feature_name in name_fixes:
+        print(f"   Tried mapping to: '{name_fixes[feature_name]}'")
+    
+    print(f"   Available features ({len(feat_names)}):")
+    for i, feat in enumerate(feat_names):
+        print(f"     {i:2}: '{feat}'")
+    
+    # Try to suggest the closest match
+    suggestions = []
+    for feat in feat_names:
+        if any(word in feat.lower() for word in feature_name.lower().split()):
+            suggestions.append(feat)
+    
+    if suggestions:
+        print(f"   💡 Possible matches: {suggestions}")
+    
+    raise ValueError(f"Feature '{feature_name}' not found in feat_names")
+
+
+# Optional: Helper function to validate all mappings work
+def test_all_mappings(feat_names):
+    """Test function to validate mappings work for your specific feat_names"""
+    common_cluster_names = [
+        'Gender', 'Age', 'Diabetes', 'Smoke', 'Hypertension', 'Dyslipidemia',
+        'PCI', 'Previous MI', 'Post IDC', 'LVEF', 'Acute MI', 'Angina',
+        'Angiography', 'Vessels', 'Previous CABG', 'Atrial Fibrillation'
+    ]
+    
+    print(f"Testing mappings for {len(feat_names)} feature model...")
+    failed = []
+    
+    for name in common_cluster_names:
+        try:
+            idx = safe_feature_index(name, feat_names)
+            print(f"✅ '{name}' -> '{feat_names[idx]}' (index {idx})")
+        except ValueError:
+            failed.append(name)
+            print(f"❌ '{name}' -> FAILED")
+    
+    if failed:
+        print(f"\n⚠️  Failed mappings: {failed}")
+        return False
+    else:
+        print(f"\n🎉 All mappings successful!")
+        return True
+# ==================== End Feature naming & cluster mapping ====================

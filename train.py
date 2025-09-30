@@ -1,5 +1,5 @@
 import numpy as np
-from sklearn.metrics import classification_report, confusion_matrix, plot_confusion_matrix, roc_auc_score
+from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score, ConfusionMatrixDisplay
 from contextlib import redirect_stdout
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import RandomizedSearchCV
@@ -26,8 +26,8 @@ def evaluate(pipe, X, y, plot=False):
     print(f"auc macro {roc_auc_score(y, pipe.predict_proba(X)[:, 1]):.3f}")
 
     if plot:
-        plot_confusion_matrix(pipe, X, y, normalize=None, values_format = '')
-        plt.grid(False)
+        ConfusionMatrixDisplay.from_estimator(pipe, X, y, normalize=None, values_format = '')
+        ConfusionMatrixDisplay.grid(False)
     else:
         print("confusion matrix")
         print(confusion_matrix(y, y_pred))

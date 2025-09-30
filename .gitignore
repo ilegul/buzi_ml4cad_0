@@ -3,3 +3,14 @@ __pycache__/
 py385_environment.yml
 ml4cad
 .DS_Store
+
+# VSCode
+.vscode/
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Exported notebooks
+exported_notebooks/
