@@ -1,0 +1,20 @@
+##############################################
+ Rank: #1 Names: ['nn_random_svmsmote_nn', 'xgb_random_svmsmote_xgb'], Score: (0.8299163931677167, 0.605444627789507, 0.08221300231382216)
+##############################################
+ Rank: #2 Names: ['nn_random_svmsmote_nn', 'rf_random_svmsmote_rf', 'xgb_random_svmsmote_xgb'], Score: (0.834424933521788, 0.5929791271347249, 0.0822477346011816)
+##############################################
+ Rank: #3 Names: ['nn_random_svmsmote_nn', 'lr_random_svmsmote_lr', 'rf_random_svmsmote_rf', 'xgb_random_svmsmote_xgb'], Score: (0.8315693649234601, 0.5824071564109515, 0.08233861180516013)
+##############################################
+ Rank: #4 Names: ['rf_random_svmsmote_rf', 'xgb_random_svmsmote_xgb'], Score: (0.8352346501209782, 0.5732620077049916, 0.08240067151570458)
+##############################################
+ Rank: #5 Names: ['lr_random_svmsmote_lr', 'rf_random_svmsmote_rf', 'xgb_random_svmsmote_xgb'], Score: (0.832153894066071, 0.577856150071386, 0.08240400685199281)
+##############################################
+ Rank: #1 Names: ['nn_random_svmsmote_nn', 'xgb_random_svmsmote_xgb'], Score: (0.8299403492801188, 0.6188271604938271, 0.08152401125541303)
+##############################################
+ Rank: #2 Names: ['nn_random_svmsmote_nn', 'rf_random_svmsmote_rf', 'xgb_random_svmsmote_xgb'], Score: (0.8336966677047648, 0.6001923076923077, 0.08182683025151453)
+##############################################
+ Rank: #3 Names: ['nn_random_svmsmote_nn', 'rf_random_svmsmote_rf'], Score: (0.8330211053350263, 0.6018596598583614, 0.08197748352771597)
+##############################################
+ Rank: #4 Names: ['nn_random_svmsmote_nn', 'lr_random_svmsmote_lr', 'xgb_random_svmsmote_xgb'], Score: (0.8280094866205113, 0.6197203562363788, 0.0820405389463699)
+##############################################
+ Rank: #5 Names: ['nn_random_svmsmote_nn', 'lr_random_svmsmote_lr', 'rf_random_svmsmote_rf', 'xgb_random_svmsmote_xgb'], Score: (0.8311956495699877, 0.5913822824862129, 0.08210083000441114)

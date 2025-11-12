@@ -1,0 +1,20 @@
+##############################################
+ Rank: #1 Names: ['gb_random_svmsmote_gb', 'nn_random_svmsmote_nn', 'rf_random_svmsmote_rf'], Score: (0.8328150827683684, 0.7046797712021386, 0.08596490065599874)
+##############################################
+ Rank: #2 Names: ['gb_random_svmsmote_gb', 'nn_random_svmsmote_nn'], Score: (0.8187768009007497, 0.6933533518958339, 0.08665941835250755)
+##############################################
+ Rank: #3 Names: ['nn_random_svmsmote_nn', 'rf_random_svmsmote_rf'], Score: (0.8290875116786047, 0.7071793363458916, 0.08773817878666487)
+##############################################
+ Rank: #4 Names: ['gb_random_svmsmote_gb', 'nn_random_svmsmote_nn', 'svc_random_bordersmote_svc', 'rf_random_svmsmote_rf'], Score: (0.8315645737009798, 0.7081930415263749, 0.08776256066857398)
+##############################################
+ Rank: #5 Names: ['gb_random_svmsmote_gb', 'nn_random_svmsmote_nn', 'svc_random_bordersmote_svc'], Score: (0.8245454327671705, 0.7136569220371879, 0.08790601616742005)
+##############################################
+ Rank: #1 Names: ['gb_random_svmsmote_gb', 'nn_random_svmsmote_nn', 'rf_random_svmsmote_rf'], Score: (0.8328150827683684, 0.7046797712021386, 0.08596490065599874)
+##############################################
+ Rank: #2 Names: ['gb_random_svmsmote_gb', 'nn_random_svmsmote_nn'], Score: (0.8187768009007497, 0.6933533518958339, 0.08665941835250755)
+##############################################
+ Rank: #3 Names: ['nn_random_svmsmote_nn', 'rf_random_svmsmote_rf'], Score: (0.8290875116786047, 0.7071793363458916, 0.08773817878666487)
+##############################################
+ Rank: #4 Names: ['gb_random_svmsmote_gb', 'nn_random_svmsmote_nn', 'svc_random_bordersmote_svc', 'rf_random_svmsmote_rf'], Score: (0.8315645737009798, 0.7081930415263749, 0.08776256066857398)
+##############################################
+ Rank: #5 Names: ['gb_random_svmsmote_gb', 'nn_random_svmsmote_nn', 'svc_random_bordersmote_svc'], Score: (0.8245454327671705, 0.7136569220371879, 0.08790601616742005)

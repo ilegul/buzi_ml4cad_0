@@ -1,0 +1,9 @@
+Model,Precision,Recall,F1-Score,F1-Score (macro avg),AUC
+Logistic Regression,0.302,0.710,0.424,0.639,0.820
+Support Vector Machine,0.211,0.485,0.294,0.560,0.648
+K-Nearest Neighbors,0.405,0.278,0.330,0.627,0.718
+Random Forest,0.413,0.550,0.472,0.693,0.828
+AdaBoost,0.614,0.207,0.310,0.625,0.823
+Neural Network (MLP),0.702,0.237,0.354,0.649,0.818
+Gradient Boosting,0.584,0.266,0.366,0.652,0.810
+XGBoost,0.532,0.438,0.481,0.708,0.826
