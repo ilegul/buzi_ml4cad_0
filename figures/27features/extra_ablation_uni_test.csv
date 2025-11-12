@@ -1,34 +1,34 @@
 ,auroc,f1_macro,importance
-fe,0.78800,0.53100,1.19021
-Age,0.76900,0.58800,1.07483
-fT3,0.81800,0.60200,1.04983
-Vessels,0.81700,0.60500,1.04463
 "Dyslipidemia
-Hystory of dyslipidemia",0.81000,0.61600,1.02597
-Euthyroid,0.82100,0.61900,1.02100
-Previous CABG,0.82100,0.62000,1.01935
-TSH,0.82700,0.62100,1.01771
-"Documented resting 
-or exertional ischemia",0.82300,0.62200,1.01608
+Hystory of dyslipidemia",0.83200,0.63100,1.08875
+fe,0.81000,0.65900,1.04249
 "Diabetes
-History of diabetes",0.81700,0.62200,1.01608
-Previous Myocardial Infarction,0.81900,0.62300,1.01445
-Angiography,0.81900,0.62300,1.01445
-Previous PCI,0.82500,0.62500,1.01120
-Angina,0.81800,0.62500,1.01120
-Low T3,0.82000,0.62500,1.01120
-fT4,0.81300,0.62700,1.00797
-"Post-ischemic Dilated
-Cardiomyopathy",0.82200,0.62700,1.00797
-Ipotiroidismo,0.82200,0.62800,1.00637
-"Smoke
-History of smoke",0.82100,0.62900,1.00477
+History of diabetes",0.83700,0.66200,1.03776
+Previous Myocardial Infarction,0.83600,0.67400,1.01929
+Vessels,0.83500,0.67600,1.01627
+fT4,0.82800,0.67700,1.01477
+Euthyroid,0.83500,0.68100,1.00881
+Previous CABG,0.83900,0.68100,1.00881
 "Hypertension
-History of hypertension",0.81400,0.63200,1.00000
+History of hypertension",0.84100,0.68100,1.00881
+Age,0.79200,0.68100,1.00881
+TSH,0.83700,0.68300,1.00586
+Subclinical primary hypothyroidism (SCH),0.83900,0.68700,1.00000
+Ipertiroidismo,0.83900,0.68700,1.00000
+"Post-ischemic Dilated
+Cardiomyopathy",0.83700,0.68800,0.99855
+fT3,0.83900,0.68800,0.99855
+Previous PCI,0.84000,0.68900,0.99710
+Ipotiroidismo,0.83900,0.68900,0.99710
+"Documented resting 
+or exertional ischemia",0.84100,0.69200,0.99277
+"Smoke
+History of smoke",0.83900,0.69300,0.99134
+Angiography,0.84100,0.69300,0.99134
+Atrial Fibrillation,0.84000,0.69600,0.98707
+Angina,0.84400,0.69600,0.98707
+Gender (Male = 1),0.84100,0.69700,0.98565
+Acute Myocardial Infarction,0.84100,0.69700,0.98565
 "Subclinical primary hyperthyroidism
-(SCT)",0.82200,0.63200,1.00000
-Subclinical primary hypothyroidism (SCH),0.82200,0.63200,1.00000
-Ipertiroidismo,0.82200,0.63200,1.00000
-Gender (Male = 1),0.82300,0.63300,0.99842
-Acute Myocardial Infarction,0.82500,0.63300,0.99842
-Atrial Fibrillation,0.82000,0.63400,0.99685
+(SCT)",0.84000,0.70000,0.98143
+Low T3,0.84100,0.70100,0.98003

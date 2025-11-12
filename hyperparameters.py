@@ -5,7 +5,7 @@ hyperparameters = {
         'model__dual': [True, False], # use primal or dual form. Default is True.  
         'model__warm_start': [True, False], # default is False. When set to True, reuse the solution of the previous call to fit as initialization, otherwise, just erase the previous solution. 
         'model__C': stats.randint(1, 10), #default is 1, if the value is larger, then it indicates stronger regularization
-        'model__max_iter': stats.randint(50, 500), # Default is 100, Maximum number of iterations taken for the solvers to converge.
+        'model__max_iter': stats.randint(100, 5000), # Default is 100, Maximum number of iterations taken for the solvers to converge.
         'model__solver': ['newton-cg', 'lbfgs', 'liblinear', 'sag', 'saga'] #default is lbfgs. 
     },
     "svc" :{

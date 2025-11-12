@@ -1,0 +1,20 @@
+##############################################
+ Rank: #1 Names: ['gb_random_svmsmote_gb', 'rf_random_smote_rf'], Score: (0.8407141224572721, 0.7285070504433784, 0.09998426735570573)
+##############################################
+ Rank: #2 Names: ['gb_random_svmsmote_gb', 'rf_random_smote_rf', 'nn_random_svmsmote_nn'], Score: (0.8393173680067044, 0.7252942414571849, 0.10168243866439829)
+##############################################
+ Rank: #3 Names: ['gb_random_svmsmote_gb', 'rf_random_smote_rf', 'xgb_random_bordersmote_xgb'], Score: (0.8457170429438504, 0.7323044366608289, 0.10226997798899858)
+##############################################
+ Rank: #4 Names: ['gb_random_svmsmote_gb', 'rf_random_smote_rf', 'nn_random_svmsmote_nn', 'xgb_random_bordersmote_xgb'], Score: (0.8437209538563121, 0.7287969206127773, 0.10284856972904526)
+##############################################
+ Rank: #5 Names: ['gb_random_svmsmote_gb', 'xgb_random_bordersmote_xgb'], Score: (0.8476724991746449, 0.7312686781927258, 0.10335338711924144)
+##############################################
+ Rank: #1 Names: ['gb_random_bordersmote_gb', 'rf_random_bordersmote_rf'], Score: (0.8254615638570739, 0.6775293671845396, 0.11773038344924071)
+##############################################
+ Rank: #2 Names: ['gb_random_bordersmote_gb', 'rf_random_bordersmote_rf', 'knn_random_svmsmote_knn'], Score: (0.8164512278741398, 0.6585719243449593, 0.11920717294068364)
+##############################################
+ Rank: #3 Names: ['nn_random_svmsmote_nn', 'rf_random_bordersmote_rf'], Score: (0.8259085252812555, 0.6734711103045752, 0.11932451640924172)
+##############################################
+ Rank: #4 Names: ['gb_random_bordersmote_gb', 'nn_random_svmsmote_nn', 'rf_random_bordersmote_rf', 'knn_random_svmsmote_knn'], Score: (0.8221499860324556, 0.6714310027516235, 0.11971665779694975)
+##############################################
+ Rank: #5 Names: ['gb_random_bordersmote_gb', 'nn_random_svmsmote_nn', 'rf_random_bordersmote_rf'], Score: (0.8266043629529929, 0.6796031272775459, 0.11985502833817273)

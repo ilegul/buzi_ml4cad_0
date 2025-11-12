@@ -1,7 +1,7 @@
 ,cluster,auroc,f1_macro,importance
-0,"['Diabetes', 'Hypertension']",0.81300,0.63600,0.97799
-1,"['Angina', 'Angiography', 'Vessels', 'Documented resting \nor exertional ischemia', 'Dyslipidemia']",0.79600,0.56800,1.09507
-2,"['Age', 'Atrial Fibrillation']",0.76300,0.55900,1.11270
-3,"['Gender', 'Smoke']",0.82200,0.62200,1.00000
-4,"['Previous CABG', 'PCI', 'Previous MI', 'Post IDC', 'LVEF']",0.74500,0.51700,1.20309
-5,['Acute MI'],0.82000,0.61900,1.00485
+0,"['Diabetes', 'Hypertension']",0.79600,0.59500,1.15966
+1,"['Angina', 'Angiography', 'Vessels', 'Documented resting \nor exertional ischemia', 'Dyslipidemia']",0.77800,0.49600,1.39113
+2,"['Age', 'Atrial Fibrillation']",0.75600,0.65400,1.05505
+3,"['Gender', 'Smoke']",0.80200,0.61400,1.12378
+4,"['Previous CABG', 'PCI', 'Previous MI', 'Post IDC', 'LVEF']",0.72100,0.56700,1.21693
+5,['Acute MI'],0.82200,0.69800,0.98854

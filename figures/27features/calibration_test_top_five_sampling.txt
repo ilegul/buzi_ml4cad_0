@@ -1,0 +1,105 @@
+##############################################
+Rank #1: ['gb_random_bordersmote_gb', 'lr_random_svmsmote_lr']
+Validation Score: (0.8220077710338523, 0.608809572774566, 0.09060894566814214)
+
+--- TEST SET ---
+              precision    recall  f1-score   support
+
+         0.0      0.625     0.178     0.276       169
+         1.0      0.892     0.985     0.936      1165
+
+    accuracy                          0.882      1334
+   macro avg      0.758     0.581     0.606      1334
+weighted avg      0.858     0.882     0.852      1334
+
+auroc 0.835
+brier 0.087
+[[  30  139]
+ [  18 1147]]
+Test Score: (0.8346903014450059, 0.6062211041482175, 0.08722113430397842)
+##############################################
+
+##############################################
+Rank #2: ['gb_random_bordersmote_gb', 'lr_random_svmsmote_lr', 'rf_random_bordersmote_rf']
+Validation Score: (0.8234350001269777, 0.624422231793426, 0.0907331030513568)
+
+--- TEST SET ---
+              precision    recall  f1-score   support
+
+         0.0      0.621     0.213     0.317       169
+         1.0      0.896     0.981     0.937      1165
+
+    accuracy                          0.884      1334
+   macro avg      0.758     0.597     0.627      1334
+weighted avg      0.861     0.884     0.858      1334
+
+auroc 0.836
+brier 0.087
+[[  36  133]
+ [  22 1143]]
+Test Score: (0.8364578307133606, 0.6268410252893395, 0.08663733071266759)
+##############################################
+
+##############################################
+Rank #3: ['adaboost_random_smote_adaboost', 'gb_random_bordersmote_gb', 'lr_random_svmsmote_lr']
+Validation Score: (0.822429336922569, 0.6011588902584163, 0.09073473506954602)
+
+--- TEST SET ---
+              precision    recall  f1-score   support
+
+         0.0      0.642     0.201     0.306       169
+         1.0      0.895     0.984     0.937      1165
+
+    accuracy                          0.885      1334
+   macro avg      0.768     0.592     0.622      1334
+weighted avg      0.863     0.885     0.857      1334
+
+auroc 0.837
+brier 0.087
+[[  34  135]
+ [  19 1146]]
+Test Score: (0.8372908042766081, 0.6216731858596127, 0.08688029167262783)
+##############################################
+
+##############################################
+Rank #4: ['adaboost_random_smote_adaboost', 'gb_random_bordersmote_gb', 'lr_random_svmsmote_lr', 'rf_random_bordersmote_rf']
+Validation Score: (0.8235670569113949, 0.6180585709003688, 0.0907735669895007)
+
+--- TEST SET ---
+              precision    recall  f1-score   support
+
+         0.0      0.625     0.207     0.311       169
+         1.0      0.895     0.982     0.937      1165
+
+    accuracy                          0.884      1334
+   macro avg      0.760     0.595     0.624      1334
+weighted avg      0.861     0.884     0.857      1334
+
+auroc 0.838
+brier 0.087
+[[  35  134]
+ [  21 1144]]
+Test Score: (0.8380272748050894, 0.6238322645199437, 0.08651572262467445)
+##############################################
+
+##############################################
+Rank #5: ['adaboost_random_smote_adaboost', 'gb_random_bordersmote_gb', 'lr_random_svmsmote_lr', 'rf_random_bordersmote_rf', 'knn_random_svmsmote_knn']
+Validation Score: (0.8231200954872133, 0.5993498577813897, 0.09082513849777361)
+
+--- TEST SET ---
+              precision    recall  f1-score   support
+
+         0.0      0.660     0.183     0.287       169
+         1.0      0.893     0.986     0.937      1165
+
+    accuracy                          0.885      1334
+   macro avg      0.776     0.585     0.612      1334
+weighted avg      0.863     0.885     0.855      1334
+
+auroc 0.836
+brier 0.087
+[[  31  138]
+ [  16 1149]]
+Test Score: (0.8357670721487163, 0.6121155821400519, 0.08736804900507965)
+##############################################
+
